@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Productos de manufactura" />
+    <!-- Fin Meta -->
+
+    <!-- Link de boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Fin Link de boostrap -->
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/stylesheets/stilos.css" />
+    <!-- Fin Link CSS  -->
+
+    <title>Dulce Almendra | <%= title %></title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header>
+      <nav class="navbar flex-lg-fill justify-content-between">
+        <div class="container-fluid p-3">
+          <form class="d-flex">
+            <input
+              class="form-control border-0 me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-light" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <a
+            class="navbar-brand text-light"
+            href="/"
+            style="font-size: 250%; font-weight: bold"
+          >
+            <img
+              src="/images/Logotipo/logo.jpg"
+              alt="Logotipo"
+              class="img-fluid rounded-circle rounded-3"
+              href="/"
+          /></a>
+
+          <div class="order-lg-1">
+            <a
+              class=""
+              href="#"
+              role="button"
+              data-display="static"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <button
+                type="button"
+                class="btn btn-primary bg-transparent my-1 my-lg-0 border-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="far fa-2x fa-user"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section class="container mt-3">
+        <ul class="navbar list-unstyled justify-content-center">
+          <a class="me-5 text-light" href=""
+            ><li><i class="fas fa-book-open me-2"></i>Productos</li></a
+          >
+          <a class="me-5 text-light" href=""
+            ><li><i class="fas fa-phone me-2"></i>Contacto</li></a
+          >
+          <a class="text-light" href=""
+            ><li><i class="fas fa-info me-2"></i>Como Comprar</li></a
+          >
+        </ul>
+      </section>
+    </header>
+    <!-- Fin Header -->
+    <!-- carousel de imagenes destacadas o promociones -->
+    <main>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/Productos/baberoMono.jpeg"
+              class="d-block w-100"
+              alt="baberoMono"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/Productos/baberoBatman.jpeg"
+              class="d-block w-100"
+              alt="baberoBatman"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/Productos/baberoPajarito.jpeg"
+              class="d-block w-100"
+              alt="baberoPirata"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <!-- Destacados -->
+      <div class="container mt-4">
+        <strong
+          ><h5><i class="fas fa-fire-alt"></i> DESTACADOS :</h5></strong
+        >
+        <div class="row">
+          <!-- destacados (row) -->
+
+          <!-- Fin destacados (row) -->
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 py-2">
+            <div
+              class="card text-white mb-3 h-100"
+              style="background-color: #dbfff6"
+            >
+              <a href="" style="color: black">
+                <img
+                  class="card-img-top img-fluid"
+                  src="/images/Productos/baberoMono.jpeg"
+                  alt="Producto destacado"
+                />
+                <div class="card-body" style="height: 9.5rem">
+                  <h4 class="card-title">Babero de monos</h4>
+                  <h5 class="card-title text-right">$500</h5>
+                  <h4 class="card-title">&ensp; $ 450</h4>
+                </div>
+              </a>
+              <div class="card-footer bg-light">
+                <a href=""
+                  ><small class="text-muted text-capitalize"
+                    >Accesorios Bebe</small
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin Destacados -->
+    </main>
+    <!-- Fin carousel de img destacadas o promociones -->
+
+    <!-- Footer -->
+    <footer
+      class="container-fluid sticky-footer mt-auto"
+      style="background-color: #f6a6ff; opacity: 0.8"
+    >
+      <div class="d-flex justify-content-between" style="height: 30px">
+        <div class="d-flex">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-2x fa-facebook-square p-2"></i
+          ></a>
+          <a href="https://www.instagram.com/?hl=es-la"
+            ><i class="fab fa-2x fa-instagram-square p-2"></i
+          ></a>
+        </div>
+      </div>
+      <div style="text-align: center; color: white">
+        <small
+          >Copyright 2021 - <i class="far fa-copyright"></i> Dulce
+          Almendra</small
+        >
+      </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Modal Usuario -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <strong>Entrar</strong>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="/users/login"
+              method="POST"
+              name="loginForm"
+              class="formUserLogin"
+            >
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Ingrese su email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleFormControlInput2"
+                  placeholder="Ingrese su contraseña"
+                />
+              </div>
+              <div class="col-12 col-md-6 form-group">
+                <input
+                  class="check-control remember"
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                />
+                Recordarme
+              </div>
+              <div class="col-12 form-group">
+                <button
+                  type="submit"
+                  id="submit"
+                  class="btn"
+                  style="background-color: #f6a6ff"
+                >
+                  Ingresar
+                </button>
+                ¿No tenes cuenta? Registrate
+                <a href="/users/register" style="text-decoration: underline"
+                  >ACA</a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              style="background-color: #6eb5ff"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Modal Usuario -->
+
+    <!-- Scripts de boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fin Scripts de boostrap -->
+    <!-- Script de FontAwesome  -->
+    <!-- <script defer src="/your-path-to-fontawesome/js/all.js"></script> load all styles -->
+    <script
+      src="https://kit.fontawesome.com/ada1ef26bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fin Script FontAwesome -->
+  </body>
+</html>

@@ -1,0 +1,53 @@
+/* Resets */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #AFCBFF;
+    
+}
+nav {
+    background-color: #F6A6FF;
+    justify-content: space-around;
+}
+
+header ul li{
+    text-decoration:underline;
+    font-size: 120%;
+}
+header section{
+    background-color: lightpink;
+}
+
+
+
+header img {
+    width: 15rem;
+    height: 15rem;
+}
+
+
+main div .carousel-item {
+    height: 600px;
+}
+main div img {
+    width: 600px;
+    height: 600px;
+}
+
+div strong h5 {
+    color:white;
+    text-decoration: underline;
+}
+
+footer .container-fluid{
+    background-color: #F6A6FF;
+}
+
+@media screen and (max-width:750px){
+    
+}
